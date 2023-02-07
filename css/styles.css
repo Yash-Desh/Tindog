@@ -1,0 +1,240 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    text-align: center;
+}
+
+/* Styling multiple classes */
+
+h1,h2,h3,h4,h5,h6 {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+}
+
+
+/* Headings */
+.big-heading {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 900;
+    font-size: 3.5rem;
+    line-height: 1.5;
+}
+
+.section-heading {
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+
+/* Containers */
+.container-fluid {
+    padding: 7% 15%;
+}
+
+
+/* Sections */
+
+.colored-section {
+    background-color: #ff4c68;
+    color: #fff;
+}
+
+.white-section {
+    background-color: #fff;
+}
+
+
+
+
+/* Navigation Bar */
+
+.navbar {
+    padding: 0 0 4.5rem;
+}
+
+.navbar-brand {
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 2.5rem;
+    font-weight: bold;
+}
+
+.nav-item {
+    padding: 0 18px;
+}
+
+.nav-link {
+    font-family: 'Montserrat', sans-serif;
+    font-weight: light;
+    font-size: 1.2rem;
+}
+
+
+/* Download Buttons */
+.download-button {
+    margin: 5% 3% 5% 0;
+}
+
+
+
+/* Title Section */
+
+
+/* NOTE : Combining CSS Class 
+.container-fluid being specifically modified only applicable  
+within the #title section so that it does not conflict with the .container-fluid
+created earlier 
+The container-fluid used at other places in the webpage still follows the global 
+style created earlier in the style sheet */
+
+#title .container-fluid {      
+    padding: 3% 15% 7%;
+    text-align: left;
+}
+
+
+/* Title Image */
+
+.title-image-container {
+    position: relative;
+}
+
+.title-image {
+    width: 60%;
+    transform: rotate(25deg);
+    position: absolute;
+    right: 30%;
+}
+
+
+
+
+
+
+
+
+/* Features Section */
+
+#features {
+    position: relative;
+    /* z-index: 1; */
+}
+
+.feature-col {
+    padding: 5%;
+}
+
+.feature-icon {
+    color: #ef8172;
+    padding-bottom: 1rem;
+}
+
+.feature-icon :hover {
+    color: #ff4c68;
+}
+
+.feature-title {
+    font-size: 1.5rem;
+}
+
+.feature-description {
+    color: #8f8f8f;
+}
+
+
+
+
+
+
+
+/* Testimonial Section */
+
+/* NOTE : Read about "specificity" also called the order of priority of CSS selectors
+Specificity helps define which CSS selector wins if there are multiple CSS selectors 
+targeting the same item  */
+
+#testimonials {
+    background-color:  #ef8172;
+}
+
+.testimonial-image {
+    width : 10%;
+    border-radius: 100%;
+    padding: 20px;
+}
+
+.testimonial-text {
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+
+
+
+
+
+/* Press Section */
+
+#press {
+    background-color:   #ef8172;
+    padding-bottom: 3%;
+}
+
+.press-logo {
+    width: 15%;
+    margin: 20px 20px 50px;
+}
+
+
+
+
+
+
+/* Pricing Section */
+
+#pricing {
+    padding: 100px;
+}
+
+.pricing-column {
+    padding: 3% 2%;
+}
+
+.price-text {
+    font-size: 3rem;
+    line-height: 1.5;
+}
+
+
+
+/* Call to action section */
+
+
+
+
+
+/* footer Section */
+
+#footer {
+    background-color: #fff;
+}
+
+
+.footer-icon {
+    margin: 20px 10px;
+}
+
+
+/* NOTE : text-align : center;
+was given inside the body tag & all its other instances were deleted
+Only its instance inside the media query was maintained seperately  */
+
+
+@media (max-width : 1000px) {
+    #title {
+        text-align: center;
+    }
+
+    .title-image {
+        position: static;
+        transform: rotate(0);
+    }
+}
